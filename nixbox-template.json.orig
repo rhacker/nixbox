@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "virtualbox-iso",
-      "boot_wait": "1m",
+      "boot_wait": "30s",
       "boot_command": [
         "root<enter>",
         "stop sshd<enter>",
@@ -22,14 +22,14 @@
       "guest_additions_mode": "disable",
       "guest_os_type": "GUEST_OS",
       "http_directory": "http",
-      "iso_checksum": "ISO_MD5",
-      "iso_checksum_type": "md5",
+      "iso_checksum": "ISO_SHA256",
+      "iso_checksum_type": "sha256",
       "iso_url": "ISO_URL",
       "shutdown_command": "sudo shutdown -h now",
       "ssh_password": "vagrant",
       "ssh_port": 22,
       "ssh_username": "vagrant",
-      "ssh_wait_timeout": "5m",
+      "ssh_wait_timeout": "30m",
       "virtualbox_version_file": ".vbox_version"
     }
   ],
@@ -47,4 +47,3 @@
     }
   ]
 }
-

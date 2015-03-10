@@ -2,7 +2,8 @@
 
 # Make sure we are totally up to date
 
-nix-channel --add http://nixos.org/channels/nixos-14.04 nixos
+nix-channel --add http://nixos.org/channels/nixos-14.12 nixos
+nix-channel --update
 nixos-rebuild switch --upgrade
 
 # Cleanup any previous generations and delete old packages that can be
